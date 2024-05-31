@@ -32,7 +32,7 @@ export const TextDisplay = ({
 
   return (
     <div className='min-h-[300px] bg-gray-900 grid grid-cols-1 rounded-3xl p-4'>
-      <p className='inline-flex'>
+      <p className='inline-flex text-xl'>
         {text.slice(0, cursorCurrIndex)}
         <p className='animate-pulse text-gray-200 inline-flex'>_</p>
         {text.slice(cursorCurrIndex)}

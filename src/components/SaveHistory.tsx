@@ -13,7 +13,7 @@ export const SaveHistory = ({ history }: { history: string[] }) => {
             {history.map((text, index) => (
               <div
                 key={index}
-                className='py-2 flex max-md:flex-col items-center justify-between gap-3'
+                className='py-2 flex max-md:flex-col md:items-center justify-between gap-3'
               >
                 <p>{text}</p>{' '}
                 <Button className='btn max-md:ml-auto max-h-[30px] max-w-[30px] bg-red-600/25 hover:bg-red-800 p-0'>
