@@ -13,20 +13,8 @@
   h1 {
     @apply xl:text-[40px] lg:text-4xl md:text-3xl text-2xl  font-bold;
   }
-  h2 {
-    @apply xl:text-4xl lg:text-3xl md:text-2xl text-xl  font-bold;
-  }
-  h3 {
-    @apply lg:text-[24px] md:text-[21px] text-[19px]  font-bold;
-  }
   h4 {
     @apply lg:text-[20px] md:text-[17px] text-[15px]  font-bold;
-  }
-  h5 {
-    @apply md:text-base text-[13px] font-bold;
-  }
-  h6 {
-    @apply md:text-sm text-[13px] font-bold;
   }
   p {
     @apply md:text-base text-sm ;
@@ -51,11 +39,5 @@
   }
   .wrapper-inner {
     @apply max-w-[700px] w-full mx-auto px-4;
-  }
-  .h-text {
-    @apply xl:text-[48px] lg:text-[42px] md:text-[37px] text-[35px] leading-[1.5] font-bold;
-  }
-  .outer-input {
-    @apply flex h-10 w-full border dark:border-slate-800 px-3 py-2 text-sm ring-offset-white  dark:ring-offset-slate-950 focus-within:ring-offset-2 dark:focus-within:ring-slate-300  focus-within:ring-2 focus-within:ring-slate-950 ;
   }
 }

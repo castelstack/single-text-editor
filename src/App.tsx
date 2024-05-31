@@ -19,13 +19,14 @@ function App() {
     saveData,
     handleSaveData,
     inputChar,
-    handleReset,cursorCurrIndex
+    handleReset,
+    cursorCurrIndex,
   } = useGetActions();
 
   return (
     <div className=' '>
       <Header />
-      <div className='wrapper-inner md:mt-32 mt-12 flex flex-col gap-3 '>
+      <div className='wrapper-inner md:mt-16 mt-12 flex flex-col gap-3 '>
         <ActionsBtns
           handleReset={handleReset}
           handleRedo={handleRedo}
