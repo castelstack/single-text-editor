@@ -125,5 +125,8 @@ export const useGetActions = () => {
     text,
     saveData,
     handleSaveData,
+    inputChar,
+    handleReset,
+    cursorCurrIndex,
   };
 };

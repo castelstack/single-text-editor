@@ -16,7 +16,7 @@ export const Header = () => {
           <img
             src={'/logo.svg'}
             alt='logo'
-            className='h-[40px] w-[40px] md:h-[50px] md:w-[50px] object-contain'
+            className='h-[40px] w-[40px]  md:h-[50px] md:w-[50px] object-contain'
           />
         </a>
         <Dialog>
@@ -25,10 +25,9 @@ export const Header = () => {
           </DialogTrigger>
           <DialogContent className='bg-gray-900 border-gray-800 text-gray-200'>
             <DialogHeader>
-              <DialogTitle>Are you absolutely sure?</DialogTitle>
+              <DialogTitle>New Features</DialogTitle>
               <DialogDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
+               Coming soon...
               </DialogDescription>
               <div></div>
             </DialogHeader>
