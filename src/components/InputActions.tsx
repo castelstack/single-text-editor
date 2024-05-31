@@ -2,7 +2,7 @@ import { Input } from './ui/input';
 import { Button } from './ui/button';
 
 import { Plus, Save, Trash2 } from 'lucide-react';
-import { ChangeEvent } from 'react';
+import { ChangeEvent, useEffect } from 'react';
 import { FuncType } from '../types';
 export const InputActions = ({
   inputChar,
@@ -17,6 +17,22 @@ export const InputActions = ({
   handleDelete: FuncType;
   handleAddText: FuncType;
 }) => {
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter') {
+        handleAddText();
+      }else if (e.key === 'Backspace') {
+        handleDelete();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleAddText, handleDelete]);
+
   return (
     <div className='grid grid-cols-[1fr_45px_45px_90px] md:gap-3 gap-1 '>
       <Input

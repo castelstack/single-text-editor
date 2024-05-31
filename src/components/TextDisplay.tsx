@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from './ui/button';
 import { FuncType } from '../types';
+import { useEffect } from 'react';
 
 export const TextDisplay = ({
   text,
@@ -13,6 +14,22 @@ export const TextDisplay = ({
   handleCursorDirBack: FuncType;
   cursorCurrIndex: number;
 }) => {
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        handleCursorDirBack();
+      } else if (e.key === 'ArrowRight') {
+        handleCursorDirFrw();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleCursorDirBack, handleCursorDirFrw]);
+
   return (
     <div className='min-h-[300px] bg-gray-900 grid grid-cols-1 rounded-3xl p-4'>
       <p className='inline-flex'>

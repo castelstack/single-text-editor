@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 type TextPos = {
   id: number;
   value: string;
@@ -99,20 +99,7 @@ export const useGetActions = () => {
     setCursorCurrIndex(getLastObj.id);
   };
 
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowLeft') {
-        handleCursorDirBack();
-      } else if (e.key === 'ArrowRight') {
-        handleCursorDirFrw();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
+ 
 
   return {
     handleRedo,
