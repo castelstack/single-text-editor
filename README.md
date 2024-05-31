@@ -2,7 +2,8 @@
 
 This is a simple text editor application built with React and TypeScript, utilizing a custom hook for state management and several UI components. It includes functionalities for adding, deleting, undoing, and redoing text changes, as well as cursor movements.
 
-##3 Tailwind React with Vite and TypeScript
+### Tailwind React with Vite and TypeScript
+[![React Single Text Editor Application](https://res.cloudinary.com/dnvsfxlan/image/upload/v1717145857/editor-banner_efhqcz.svg)](https://github.com/castelstack/single-text-editor/)
 
 ### Demo
 - Visit: https://single-editor.netlify.app/
@@ -18,9 +19,9 @@ This is a simple text editor application built with React and TypeScript, utiliz
 
 #### Get the repo
 
-* [Create new repo](https://github.com/castelstack/single-text-editor) with this template
+* [Create new repo](https://github.com/castelstack/single-text-editor/) with this template
 * &hellip; or clone this repo on GitHub
-* &hellip; or [download .zip](https://github.com/castelstack/single-text-editor/archive/master.zip) from GitHub
+* &hellip; or [download .zip](https://github.com/castelstack/single-text-editor/archive/master.zip/) from GitHub
 
 #### Install
 
