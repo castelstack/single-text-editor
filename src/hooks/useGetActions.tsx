@@ -42,6 +42,9 @@ export const useGetActions = () => {
   };
 
   const handleDelete = () => {
+    if (cursorCurrIndex === 0 || text.length === 0) {
+        return;
+      }
     const newText =
       text.slice(0, cursorCurrIndex - 1) + text.slice(cursorCurrIndex);
 
@@ -96,7 +99,7 @@ export const useGetActions = () => {
     setTextHistory((prev) => [...prev, getLastObj]);
     const newArray = textHistoryUndo.slice(0, -1);
     setTextHistoryUndo(newArray);
-    setCursorCurrIndex(getLastObj.id);
+    setCursorCurrIndex(getLastObj.id + 1);
   };
 
  
