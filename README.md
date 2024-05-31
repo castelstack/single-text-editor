@@ -2,38 +2,57 @@
 
 This is a simple text editor application built with React and TypeScript, utilizing a custom hook for state management and several UI components. It includes functionalities for adding, deleting, undoing, and redoing text changes, as well as cursor movements.
 
-## Tailwind React with Vite and TypeScript
+##3 Tailwind React with Vite and TypeScript
 
-## Demo
+### Demo
 - Visit: https://single-editor.netlify.app/
 
-## Features
+### Features
 
 - Add, delete, undo, and redo text changes
 - Move cursor forward and backward
 - Save and display text history
 
-## Installation
 
-1. **Clone the Repository**
+### Get code & install
 
-   ```
-   git clone https://github.com/castelstack/single-text-editor
-   cd single-text-editor
-  ```
+#### Get the repo
 
-2. **Install Dependencies**
-Ensure you have Node.js installed, then run:
+* [Create new repo](https://github.com/castelstack/single-text-editor) with this template
+* &hellip; or clone this repo on GitHub
+* &hellip; or [download .zip](https://github.com/castelstack/single-text-editor/archive/master.zip) from GitHub
 
-   ```
-    yarn
-  ```
-    ** Start the Application
+#### Install
 
-   ```
-    yarn dev
-  ```
-1. **File Structure**
+`cd` to project's dir and run `npm install`
+
+
+#### Hot-reloads for development
+
+```
+npm run dev
+```
+
+#### Builds and minifies for production
+
+```
+npm run build
+```
+
+#### Exports build for static hosts
+
+```
+npm run export
+```
+
+### Docs
+
+Docs are coming soon
+
+### Browser Support
+We try to make sure Dashboard works well in the latest versions of all major browsers
+
+### File Structure
 
 * src/App.tsx: Main application component.
 * src/hooks/useGetActions.ts: Custom hook for managing text editor state and actions.
@@ -43,7 +62,7 @@ Ensure you have Node.js installed, then run:
 * src/components/SaveHistory.tsx: Component for displaying saved texts.
 * src/components/TextDisplay.tsx: Component for displaying the text with a cursor.
 
-## Hook Exports
+### Hook Exports
 
 - The useGetActions hook exports the following functions and state variables:
 
@@ -62,5 +81,5 @@ Ensure you have Node.js installed, then run:
 * cursorCurrIndex
 
 
-## License
+### License
 This project is licensed under the MIT License.
