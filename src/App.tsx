@@ -25,7 +25,7 @@ function App() {
   return (
     <div className=' '>
       <Header />
-      <div className='wrapper-inner mt-32 flex flex-col gap-3 '>
+      <div className='wrapper-inner md:mt-32 mt-12 flex flex-col gap-3 '>
         <ActionsBtns
           handleReset={handleReset}
           handleRedo={handleRedo}
