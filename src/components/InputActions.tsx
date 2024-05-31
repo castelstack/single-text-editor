@@ -23,7 +23,7 @@ export const InputActions = ({
         value={inputChar}
         maxLength={1}
         onChange={(e) => handleChangeText(e)}
-        placeholder='input a character'
+        placeholder='Input a character'
       />
       <Button
         type='button'
